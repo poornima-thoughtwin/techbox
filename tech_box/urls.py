@@ -15,8 +15,6 @@ Including another URLconf
 """
 
 from django.urls import path, include, re_path
-def trigger_error(request):
-    division_by_zero = 1 / 0
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import  static
