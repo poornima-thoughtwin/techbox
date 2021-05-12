@@ -191,6 +191,7 @@ LANGUAGES = [
    ('fr', ('French')),
    ('ar',('Arabic'))
 ]
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
 
 STATIC_URL = '/static/'
