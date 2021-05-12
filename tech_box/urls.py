@@ -37,11 +37,11 @@ urlpatterns = [
 ]
 
 
-# urlpatterns = i18n_patterns(
-#     path('', include('dashboard.urls')),
-#     path('', include('authentication.urls')),
-#     path(r'^i18n/', include('django.conf.urls.i18n')),
-# )
+urlpatterns = i18n_patterns(
+    path('', include('dashboard.urls')),
+    path('', include('authentication.urls')),
+    path(r'^i18n/', include('django.conf.urls.i18n')),
+)
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
